@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgKrait" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAF1F0"/>
+      <stop offset="100%" stop-color="#D2E3E0"/>
+    </linearGradient>
+    <linearGradient id="kraitScales" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14191C"/>
+      <stop offset="50%" stop-color="#223035"/>
+      <stop offset="100%" stop-color="#0E1214"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" rx="12" fill="url(#bgKrait)"/>
+  
+  <ellipse cx="200" cy="215" rx="145" ry="18" fill="#559E83" opacity="0.25"/>
+
+  <!-- Krait S-curve sinuous body -->
+  <path d="M70 200 C110 170, 140 230, 190 200 C240 170, 270 225, 330 190 C345 180, 345 150, 310 145 C260 140, 230 120, 200 135 C170 150, 140 125, 120 100 C105 80, 95 65, 80 75 C70 85, 75 105, 95 125" 
+        stroke="url(#kraitScales)" stroke-width="26" stroke-linecap="round" fill="none"/>
+  
+  <!-- Paired White Crossbands (Distinguishing Characteristic) -->
+  <path d="M125 107 L115 118" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M132 114 L122 125" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M175 137 L165 149" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M182 143 L172 155" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M225 127 L235 139" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M232 121 L242 133" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M280 142 L290 154" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M287 146 L297 158" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M315 178 L328 170" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M320 185 L333 177" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M245 185 L255 197" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M252 189 L262 201" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M165 210 L155 222" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M172 214 L162 226" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Head (smooth, non-distinct neck) -->
+  <path d="M80 75 C70 65, 85 55, 95 62 C105 70, 95 85, 80 75 Z" fill="#14191C"/>
+  <circle cx="88" cy="65" r="2.5" fill="#000000" stroke="#4F6168" stroke-width="1"/>
+  <circle cx="89" cy="64" r="0.8" fill="#FFFFFF"/>
+  <path d="M72 63 L62 57 L58 53 M62 57 L58 61" stroke="#D9381E" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Identification Badge -->
+  <rect x="16" y="16" width="130" height="26" rx="6" fill="#D9381E" fill-opacity="0.15"/>
+  <text x="24" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#D9381E">VENOMOUS (Big Four)</text>
+</svg>

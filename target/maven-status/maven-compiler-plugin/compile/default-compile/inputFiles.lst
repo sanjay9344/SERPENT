@@ -1,0 +1,16 @@
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\config\SecurityConfig.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\controller\AuthController.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\dto\ApiResponse.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\dto\LoginRequest.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\dto\RegisterRequest.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\dto\UserResponse.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\exception\DuplicateEmailException.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\exception\GlobalExceptionHandler.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\exception\ResourceNotFoundException.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\model\User.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\repository\JdbcUserRepository.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\repository\UserRepository.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\service\CustomUserDetailsService.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\service\UserService.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\service\UserServiceImpl.java
+C:\Users\sanjay\OneDrive\Desktop\pbl\src\main\java\com\snakeguard\SnakeGuardApplication.java

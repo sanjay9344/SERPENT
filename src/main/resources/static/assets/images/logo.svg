@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Shield Outline -->
+  <path d="M16 3L5 7.5V15C5 22.5 9.7 28.5 16 30C22.3 28.5 27 22.5 27 15V7.5L16 3Z" 
+        stroke="#007A78" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+  <!-- Centered Medical Plus -->
+  <path d="M16 10V20M11 15H21" 
+        stroke="#007A78" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

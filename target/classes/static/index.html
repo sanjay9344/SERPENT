@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERPENT. — Know the Snake. Act Fast. Save Lives.</title>
+  <meta name="description" content="Learn about snake species, understand venom, access evidence-based first-aid guidance, and find emergency medical assistance.">
+  
+  <!-- SERPENT Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation (Matches Image 5 & Image 3) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="SERPENT Home">
+        <img src="assets/images/logo.svg" alt="SERPENT Shield Icon" class="brand-icon" width="28" height="28">
+        <span class="brand-name">SERPENT.</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#snakes" class="nav-link">Snake Bites</a></li>
+          <li><a href="#first-aid" class="nav-link">First Aid Guidance</a></li>
+          <li><a href="#snakes" class="nav-link">Venom Guide</a></li>
+        </ul>
+
+        <!-- Right Side Auth Actions -->
+        <div class="header-actions" id="header-auth-actions">
+          <a href="login.html" class="btn-login-text">Log In</a>
+          <a href="signup.html" class="btn-signup-teal">Sign Up ↗</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Matches Image 5) -->
+    <section class="hero-wrapper" id="hero">
+      <div class="hero-overlay"></div>
+      
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>🛡️</span> AWARENESS IS YOUR FIRST LINE OF DEFENSE
+          </div>
+          
+          <h1 class="hero-title">
+            Know the Snake.<br>Act Fast. Save Lives.
+          </h1>
+          
+          <p class="hero-desc">
+            Learn about snake species, understand venom, access first-aid guidance, and find nearby medical assistance.
+          </p>
+
+          <!-- Floating Search & Filter Capsule (Matches Image 5) -->
+          <div class="hero-search-capsule" role="search">
+            <div class="search-input-group">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="hero-search-input" class="hero-search-input" placeholder="Search snake species...">
+            </div>
+
+            <div class="capsule-divider"></div>
+
+            <select id="hero-country-select" class="capsule-select" aria-label="Filter by country">
+              <option value="India" selected>India</option>
+              <option value="Australia">Australia</option>
+              <option value="United States">United States</option>
+              <option value="Brazil">Brazil</option>
+              <option value="all">All Countries</option>
+            </select>
+
+            <div class="capsule-divider"></div>
+
+            <select id="hero-classification-select" class="capsule-select" aria-label="Filter by classification">
+              <option value="all" selected>2025</option>
+              <option value="venomous">Venomous</option>
+              <option value="non-venomous">Non-venomous</option>
+            </select>
+
+            <button type="button" class="btn-capsule-explore" id="btn-hero-explore">
+              Explore Snakes →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Corner Caption (Matches Image 5) -->
+      <div class="hero-caption-corner">
+        <div class="hero-caption-title">Indian Cobra</div>
+        <div class="hero-caption-sub">Naja naja · Illustrative wildlife imagery</div>
+      </div>
+    </section>
+
+    <!-- Emergency Ribbon (Matches Image 5 bottom) -->
+    <section class="emergency-ribbon">
+      <div class="container emergency-ribbon-content">
+        <div class="ribbon-info">
+          <div class="ribbon-plus-icon">+</div>
+          <div>
+            <div class="ribbon-text-strong">Suspect a snakebite? Every moment matters.</div>
+            <div class="ribbon-text-sub">Stay calm, stay still, and seek medical attention immediately.</div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-emergency-action" data-emergency-trigger>
+          <span>⚠️</span> EMERGENCY — FIND NEAREST HOSPITAL →
+        </button>
+      </div>
+    </section>
+
+    <!-- Snake Species Cards Section (Matches Image 4) -->
+    <section class="species-section" id="snakes">
+      <div class="container">
+        <!-- Filter Tabs & Stats Bar -->
+        <div class="species-filter-bar">
+          <div class="species-filter-tabs">
+            <button type="button" class="filter-tab-btn active" data-filter="all">All Species</button>
+            <button type="button" class="filter-tab-btn" data-filter="venomous">Venomous Only</button>
+            <button type="button" class="filter-tab-btn" data-filter="non-venomous">Non-venomous Only</button>
+          </div>
+          <span class="species-count-text" id="species-count">8 species shown</span>
+        </div>
+
+        <!-- 4-Column Cards Grid (Matches Image 4) -->
+        <div class="species-grid-4col" id="species-cards-grid" aria-live="polite">
+          <!-- Dynamically populated by main.js with 8 photographic cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Snakebite First-Aid & Emergency Guidance Section -->
+    <section class="first-aid-section" id="first-aid">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">MEDICAL PROTOCOL</span>
+          <h2 class="section-title">Snakebite First Aid Guidance</h2>
+          <p class="section-desc">
+            Evidence-based medical guidance aligned with World Health Organization (WHO) protocols.
+          </p>
+        </div>
+
+        <!-- Two Column Do's and Don'ts -->
+        <div class="first-aid-cards-grid">
+          <!-- Immediate Actions (DO) -->
+          <div class="guidance-column-card do-card">
+            <div class="guidance-col-head">
+              <span class="check-icon-do">✓</span>
+              <h3 class="guidance-col-title" style="color: var(--color-success);">Immediate Actions (DO)</h3>
+            </div>
+            <ul class="guidance-checklist">
+              <li class="guidance-item-row">
+                <span class="check-icon-do">✓</span>
+                <div class="check-item-text">
+                  <h5>Seek emergency medical care immediately</h5>
+                  <p>Transport the patient immediately to the nearest hospital equipped with Anti-Snake Venom (ASV).</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-do">✓</span>
+                <div class="check-item-text">
+                  <h5>Keep the victim calm and still</h5>
+                  <p>Panic and movement increase heart rate and accelerate systemic venom spread.</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-do">✓</span>
+                <div class="check-item-text">
+                  <h5>Immobilize the affected limb</h5>
+                  <p>Use a splint or loose sling to restrict movement and maintain the limb at heart level.</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-do">✓</span>
+                <div class="check-item-text">
+                  <h5>Remove tight jewelry and clothing</h5>
+                  <p>Take off rings, watches, tight bracelets, and footwear before localized swelling begins.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Dangerous Myths (DO NOT) -->
+          <div class="guidance-column-card dont-card">
+            <div class="guidance-col-head">
+              <span class="check-icon-dont">✕</span>
+              <h3 class="guidance-col-title" style="color: var(--color-emergency);">Dangerous Myths (DO NOT)</h3>
+            </div>
+            <ul class="guidance-checklist">
+              <li class="guidance-item-row">
+                <span class="check-icon-dont">✕</span>
+                <div class="check-item-text">
+                  <h5>DO NOT cut or incise the wound</h5>
+                  <p>Incision damages vital tendons, nerves, and vessels and causes severe blood loss and infection.</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-dont">✕</span>
+                <div class="check-item-text">
+                  <h5>DO NOT attempt to suck out the venom</h5>
+                  <p>Suction is ineffective at extracting venom and introduces mouth bacteria into compromised tissue.</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-dont">✕</span>
+                <div class="check-item-text">
+                  <h5>DO NOT apply a tight arterial tourniquet</h5>
+                  <p>Tourniquets stop arterial blood flow, causing limb gangrene, amputation risk, and shock on release.</p>
+                </div>
+              </li>
+              <li class="guidance-item-row">
+                <span class="check-icon-dont">✕</span>
+                <div class="check-item-text">
+                  <h5>DO NOT apply ice or traditional herbal pastes</h5>
+                  <p>Extreme cold worsens tissue necrosis. Do not delay emergency hospital transport for unverified cures.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Emergency Protocol Modal -->
+  <div class="modal-backdrop" id="emergency-modal" role="dialog" aria-modal="true" aria-labelledby="emerg-modal-title">
+    <div class="modal-sheet">
+      <div class="modal-sheet-header emergency-header">
+        <h3 id="emerg-modal-title" style="font-size: 1.15rem; font-weight: 700;">🚨 EMERGENCY ACTION PROTOCOL</h3>
+        <button type="button" class="btn-modal-close close-emergency-modal" aria-label="Close emergency modal">&times;</button>
+      </div>
+      <div class="modal-sheet-body">
+        <div style="background: var(--color-emergency-light); padding: 14px 16px; border-radius: 8px; border-left: 4px solid var(--color-emergency);">
+          <strong style="color: var(--color-emergency-dark); font-size: 0.95rem; display: block; margin-bottom: 4px;">
+            Treat any suspected bite as an immediate medical emergency.
+          </strong>
+          <span style="font-size: 0.88rem; color: #7F1D1D;">
+            Do not wait for symptoms to develop. Transport the patient to a hospital immediately.
+          </span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 6px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.82rem; flex-shrink: 0;">1</div>
+            <div>
+              <strong style="font-size: 0.92rem; color: var(--color-text-main);">Dial Emergency Services:</strong>
+              <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 2px;">
+                <strong>India:</strong> Call <strong>112</strong> (National) or <strong>108</strong> (Ambulance).
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.82rem; flex-shrink: 0;">2</div>
+            <div>
+              <strong style="font-size: 0.92rem; color: var(--color-text-main);">Head to Hospital with ASV:</strong>
+              <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 2px;">
+                Proceed directly to the nearest district government hospital or medical college.
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.82rem; flex-shrink: 0;">3</div>
+            <div>
+              <strong style="font-size: 0.92rem; color: var(--color-text-main);">Immobilize Affected Limb:</strong>
+              <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 2px;">
+                Splint the limb and keep the patient completely still during transit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-sheet-footer">
+        <button type="button" class="btn-signup-teal close-emergency-modal">Close Notice</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Species Details Modal -->
+  <div class="modal-backdrop" id="details-modal" role="dialog" aria-modal="true" aria-labelledby="details-modal-title">
+    <div class="modal-sheet">
+      <div class="modal-sheet-header">
+        <h3 id="details-modal-title" style="font-size: 1.15rem; font-weight: 700;">Species Profile</h3>
+        <button type="button" class="btn-modal-close close-details-modal" aria-label="Close details modal">&times;</button>
+      </div>
+      <div class="modal-sheet-body" id="details-modal-body">
+        <!-- Injected by JavaScript -->
+      </div>
+      <div class="modal-sheet-footer">
+        <button type="button" class="btn-signup-teal close-details-modal">Close Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (Matches Image 3 & Image 2) -->
+  <footer class="serpent-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <div class="footer-brand-row">
+            <img src="assets/images/logo.svg" alt="SERPENT Logo" width="24" height="24">
+            <span class="footer-brand-name">SERPENT.</span>
+          </div>
+          <p class="footer-brand-motto">Knowledge. Preparedness. Peace of mind.</p>
+        </div>
+
+        <!-- 3 Link Columns matching Image 3 -->
+        <div class="footer-links-grid">
+          <div class="footer-nav-col">
+            <a href="#snakes">Snake explorer</a>
+            <a href="#snakes">Venom education</a>
+          </div>
+          <div class="footer-nav-col">
+            <a href="#snakes">Country &amp; year explorer</a>
+            <a href="#first-aid">Emergency care</a>
+          </div>
+          <div class="footer-nav-col">
+            <a href="#first-aid">First aid</a>
+            <a href="signup.html">Demo dashboards</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <p>&copy; SERPENT Wildlife Safety Platform. Stage 1 Production Implementation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

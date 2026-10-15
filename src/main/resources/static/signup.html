@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the SERPENT community — SERPENT.</title>
+  <meta name="description"
+    content="Choose an account type to join the SERPENT community for wildlife safety and medical preparedness.">
+
+  <!-- SERPENT Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Top Header Navigation (Matches Image 5 & 3) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="SERPENT Home">
+        <img src="assets/images/logo.svg" alt="SERPENT Shield Icon" class="brand-icon" width="28" height="28">
+        <span class="brand-name">SERPENT.</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#snakes" class="nav-link">Snake Bites</a></li>
+          <li><a href="index.html#first-aid" class="nav-link">First Aid Guidance</a></li>
+          <li><a href="index.html#snakes" class="nav-link">Venom Guide</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="login.html" class="btn-login-text">Log In</a>
+          <a href="signup.html" class="btn-signup-teal" style="background-color: var(--color-primary-dark);">Sign Up
+            ↗</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Sign-up Container (Matches Image 3 & Image 2) -->
+  <main class="auth-wrapper" style="align-items: flex-start;">
+    <div class="auth-box-signup">
+
+      <!-- Top Section (Matches Image 3) -->
+      <div class="auth-header-meta">
+        <span class="auth-pre-tag">SAFER COMMUNITIES START TOGETHER</span>
+        <h1 class="auth-main-heading">Join the SERPENT community</h1>
+        <p class="auth-sub-desc">Choose an account type to explore a simulated registration. No real account will be
+          created.</p>
+      </div>
+
+      <!-- Demo Alert Banner (Matches Image 3) -->
+      <div class="serpent-demo-banner" role="status">
+        <span class="icon">⚠️</span>
+        <span>FRONTEND DEMO — No information is sent to a server or saved as real credentials.</span>
+      </div>
+
+      <!-- Step 1: Role Selection Grid (Matches Image 3) -->
+      <div id="role-selection-step">
+        <div class="role-cards-grid" id="role-selection-grid">
+          <!-- 1. User / Patient -->
+          <div class="role-card-serpent active-role" id="role-card-user">
+            <div class="role-icon-box icon-user">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#007A78" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="role-card-title">User / Patient</h3>
+            <p class="role-card-desc">Learn, stay prepared and find emergency assistance.</p>
+            <button type="button" class="btn-role-action" id="btn-select-user-role">
+              Continue →
+            </button>
+          </div>
+
+          <!-- 2. Hospital / Clinic -->
+          <div class="role-card-serpent" id="role-card-hospital">
+            <div class="role-icon-box icon-hospital">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#007A78" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="12" y1="9" x2="12" y2="15"></line>
+                <line x1="9" y1="12" x2="15" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="role-card-title">Hospital / Clinic</h3>
+            <p class="role-card-desc">Share your facility and snakebite care capabilities.</p>
+            <button type="button" class="btn-role-action"
+              onclick="alert('Hospital / Clinic onboarding will be enabled in Stage 2.');">
+              Continue →
+            </button>
+          </div>
+
+          <!-- 3. Snake Catcher -->
+          <div class="role-card-serpent" id="role-card-catcher">
+            <div class="role-icon-box icon-catcher">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#007A78" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+              </svg>
+            </div>
+            <h3 class="role-card-title">Snake Catcher</h3>
+            <p class="role-card-desc">Support safe rescues in your local community.</p>
+            <button type="button" class="btn-role-action"
+              onclick="alert('Snake Catcher network onboarding will be enabled in Stage 2.');">
+              Continue →
+            </button>
+          </div>
+
+          <!-- 4. Admin -->
+          <div class="role-card-serpent" id="role-card-admin">
+            <div class="role-icon-box icon-admin">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#007A78" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="role-card-title">Admin</h3>
+            <p class="role-card-desc">Preview verification and educational content management.</p>
+            <button type="button" class="btn-role-action btn-role-restricted"
+              onclick="alert('Admin registration is restricted in public demo mode.');">
+              Restricted demo →
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom link directly below cards (Matches Image 3) -->
+        <div class="auth-bottom-switch" style="margin-top: 32px; margin-bottom: 24px;">
+          Already have an account? <a href="login.html">Log In</a>
+        </div>
+      </div>
+
+      <!-- Registration Form Card (Matches Image 2) -->
+      <div class="registration-form-card" id="user-registration-section"
+        style="margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--color-border);">
+        <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center;">
+          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-text-main);">User / Patient Registration
+          </h2>
+          <a href="#role-selection-grid" style="color: var(--color-primary); font-size: 0.88rem; font-weight: 600;">
+            ↑ Change account type
+          </a>
+        </div>
+
+        <!-- Status Feedback Alerts -->
+        <div id="signup-alert" class="auth-status-alert" role="alert"></div>
+
+        <form id="signup-form" class="serpent-form" novalidate>
+
+          <!-- Full Name -->
+          <div class="field-group">
+            <label for="fullName" class="field-label">Full Name</label>
+            <input type="text" id="fullName" name="fullName" class="field-input" placeholder="e.g. Priya Sharma"
+              required autocomplete="name">
+            <span class="field-inline-error" id="fullName-error"></span>
+          </div>
+
+          <!-- Email & Phone (2 cols) -->
+          <div class="form-grid-2col">
+            <div class="field-group">
+              <label for="email" class="field-label">Email</label>
+              <input type="email" id="email" name="email" class="field-input" placeholder="example@demo.test" required
+                autocomplete="email">
+              <span class="field-inline-error" id="email-error"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="phone" class="field-label">Phone number</label>
+              <input type="tel" id="phone" name="phone" class="field-input" placeholder="+91 9876543210" required
+                autocomplete="tel">
+              <span class="field-inline-error" id="phone-error"></span>
+            </div>
+          </div>
+
+          <!-- Address (Matches Image 2) -->
+          <div class="field-group">
+            <label for="address" class="field-label">Address</label>
+            <input type="text" id="address" name="address" class="field-input" placeholder="Enter your address"
+              autocomplete="street-address">
+            <span class="field-inline-error" id="address-error"></span>
+          </div>
+
+          <!-- City (Matches Image 2) -->
+          <div class="field-group">
+            <label for="city" class="field-label">City</label>
+            <input type="text" id="city" name="city" class="field-input" placeholder="Enter your city"
+              autocomplete="address-level2">
+            <span class="field-inline-error" id="city-error"></span>
+          </div>
+
+          <!-- Country (Matches Image 2) -->
+          <div class="field-group">
+            <label for="country" class="field-label">Country</label>
+            <select id="country" name="country" class="field-select" required>
+              <option value="" disabled selected>Select country</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="United States">United States</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="field-inline-error" id="country-error"></span>
+          </div>
+
+          <!-- Password (Matches Image 2) -->
+          <div class="field-group">
+            <label for="password" class="field-label">Password</label>
+            <div class="input-password-wrapper">
+              <input type="password" id="password" name="password" class="field-input"
+                placeholder="Enter password (min 8 characters)" required autocomplete="new-password">
+              <button type="button" class="eye-toggle-btn" data-target="password"
+                aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <span class="field-inline-error" id="password-error"></span>
+          </div>
+
+          <!-- Confirm Password (Matches Image 2) -->
+          <div class="field-group">
+            <label for="confirmPassword" class="field-label">Confirm password</label>
+            <div class="input-password-wrapper">
+              <input type="password" id="confirmPassword" name="confirmPassword" class="field-input"
+                placeholder="Re-enter password" required autocomplete="new-password">
+              <button type="button" class="eye-toggle-btn" data-target="confirmPassword"
+                aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <span class="field-inline-error" id="confirmPassword-error"></span>
+          </div>
+
+          <!-- Submit Button (Matches Image 2) -->
+          <button type="submit" class="btn-serpent-submit" id="signup-submit-btn"
+            style="height: 48px; margin-top: 12px; margin-bottom: 28px;">
+            Submit demo registration →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer (Matches Image 3 & Image 2) -->
+  <footer class="serpent-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand-box">
+          <div class="footer-brand-row">
+            <img src="assets/images/logo.svg" alt="SERPENT Logo" width="24" height="24">
+            <span class="footer-brand-name">SERPENT.</span>
+          </div>
+          <p class="footer-brand-motto">Knowledge. Preparedness. Peace of mind.</p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-nav-col">
+            <a href="index.html#snakes">Snake explorer</a>
+            <a href="index.html#snakes">Venom education</a>
+          </div>
+          <div class="footer-nav-col">
+            <a href="index.html#snakes">Country &amp; year explorer</a>
+            <a href="index.html#first-aid">Emergency care</a>
+          </div>
+          <div class="footer-nav-col">
+            <a href="index.html#first-aid">First aid</a>
+            <a href="signup.html">Demo dashboards</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <p>&copy; SERPENT Wildlife Safety Platform. Stage 1 Production Implementation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
