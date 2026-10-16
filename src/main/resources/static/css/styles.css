@@ -47,7 +47,9 @@
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -76,7 +78,9 @@ a {
   text-decoration: none;
 }
 
-button, input, select {
+button,
+input,
+select {
   font: inherit;
 }
 
@@ -225,10 +229,10 @@ button, input, select {
    ========================================================= */
 .hero-wrapper {
   position: relative;
-  min-height: 540px;
+  min-height: 560px;
   background-image: url('../assets/images/hero-cobra.jpg');
   background-size: cover;
-  background-position: right center;
+  background-position: right 15%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -239,12 +243,11 @@ button, input, select {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, 
-    rgba(5, 18, 14, 0.92) 0%, 
-    rgba(5, 18, 14, 0.82) 42%, 
-    rgba(5, 18, 14, 0.35) 75%, 
-    rgba(5, 18, 14, 0.1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(5, 18, 14, 0.92) 0%,
+      rgba(5, 18, 14, 0.82) 42%,
+      rgba(5, 18, 14, 0.35) 75%,
+      rgba(5, 18, 14, 0.1) 100%);
   z-index: 1;
 }
 
@@ -912,32 +915,75 @@ button, input, select {
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.3rem;
+  .nav-links {
+    display: none;
   }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .btn-signup-teal {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+
+  .btn-login-text {
+    padding: 7px 8px;
+    font-size: 0.85rem;
+  }
+
+  .hero-wrapper {
+    background-position: 80% 12%;
+    min-height: auto;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg,
+        rgba(5, 18, 14, 0.88) 0%,
+        rgba(5, 18, 14, 0.78) 45%,
+        rgba(5, 18, 14, 0.94) 100%);
+  }
+
+  .hero-content {
+    padding: 44px 0 56px;
+    gap: 16px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
   .species-grid-4col {
     grid-template-columns: 1fr;
   }
+
   .first-aid-cards-grid {
     grid-template-columns: 1fr;
   }
+
   .hero-search-capsule {
     flex-direction: column;
     align-items: stretch;
     border-radius: var(--radius-md);
     padding: 12px;
   }
+
   .capsule-divider {
     display: none;
   }
+
   .emergency-ribbon-content {
     flex-direction: column;
     align-items: stretch;
   }
+
   .footer-top-row {
     flex-direction: column;
     gap: 32px;
   }
+
   .footer-links-grid {
     grid-template-columns: 1fr;
     gap: 20px;
